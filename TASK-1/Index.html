@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="Task3.css">
+</head>
+<body>
+    <div class="display_box">
+        <center><h1 STYLE="color: blue;"><u><b>TEMPERATURE CONVERTER</b></u></h1></center><br>
+        <div class="temperature">
+        <div class="types">
+            <div>
+                <label for="degree"><b>Enter Your Data:</b></label>
+                <input type="number" name="degree" id="temperature_input" placeholder="Type Temperature Here" required><br><br>
+            </div>
+            <div>
+                <div>
+                    <div class="convert">
+                <div>
+                    <label><b>From:</b></label>
+                    <select id="input1">
+                        <option value="celcius">CELCIUS</option>
+                        <option value="fahrenheit">FAHRENHEIT</option>
+                        <option value="kelvin">KELVIN</option>
+                    </select>
+                </div>
+                <div>
+                    <label><b>To:</b></label>
+                    <select id="input2">
+                        <option value="celcius">CELCIUS</option>
+                        <option value="fahrenheit">FAHRENHEIT</option>
+                        <option value="kelvin">KELVIN</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+        </div>
+        <input type="button" name="convert" value="Convert" id="btn" onclick="temperature()"></input>
+        <div class="result">
+            <label><b>Result:</b></label>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="Task3.js"></script>
+</body>
+</html>
